@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Droppable</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!--    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+<!--    <link rel="stylesheet" href="/resources/demos/style.css">-->
+    <script>
+        $(function () {
+            $("#nghia01").draggable();
+            $("#nghia02").droppable({
+                drop:function (event, ui) {
+                    $(this)
+                    .addClass(" ")
+                    .find("p")
+                    .html("ok đã hoàn thành");
+                }
+            });
+        });
+
+        </script>
+
+    <style>
+        #nghia01{width: 100px;height: 100px;padding: 1px;float: left; margin: 10px 10px 10px 0px; background: aqua;}
+        #nghia02{width: 150px;height: 150px;padding: 1px;float: left;margin: 10px;background: #17ff00;}
+    </style>
+
+</head>
+<body>
+<div id="nghia01" >
+    <p>mơ</p>
+</div>
+<div id="nghia02" >
+    <p>nghĩa</p>
+</div>
+</body>
+</html>

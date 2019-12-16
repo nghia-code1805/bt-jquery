@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+</head>
+<body>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-01">ƯU ĐÃI 1:</a></li>
+        <li><a href="#tabs-02">ƯU ĐÃI 2:</a></li>
+    </ul>
+    <div id="tabs-01">
+        <p>Từ ngày 10/12 đến hết tháng 1/2022. Học viên đăng ký 1 khóa trở
+            lên sẽ được học miễn phí tất cả các buổi trong tuần</p>
+    </div>
+    <div id="tabs-02">
+        <p>Học viên đến đúng lịch hẹn sẽ được giảm thêm 200k trên tổng học phí.
+            (áp dụng khi đặt lịch online hoặc qua điện thoại các bạn nhé)</p>
+    </div>
+
+</div>
+</body>
+</html>

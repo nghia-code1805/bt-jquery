@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sortable</title>
+</head>
+<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+<!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+    #sortable{list-style-type: none;margin: 0;padding: 0;width: 30%; }
+    #sortable li{margin: 0px 3px 3px 3px;padding: 0.4em;padding-left: 1.5em;font-size: 20px;height: 20px;background: #F39814}
+    #sortable li span{position: absolute;margin-left: -1.3em;}
+</style>
+
+<script>
+    $(function () {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+    });
+</script>
+<body>
+<ul id="sortable">
+    <li><span></span>Item 1</li>
+    <li><span></span>Item 2</li>
+    <li><span></span>Item 3</li>
+    <li><span></span>Item 4</li>
+    <li><span></span>Item 5</li>
+    <li><span></span>Item 6</li>
+
+</ul>
+</body>
+</html>
